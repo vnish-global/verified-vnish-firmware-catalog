@@ -1,82 +1,60 @@
-# Runbook публикации · всё готово, осталось исполнение
+# Publication and integrity policy
 
-Пакет прошёл проверки и лежит в архиве `catalog-repo-v3.1-2026-08-10.tar.gz`. Ниже точная последовательность. Ничего придумывать не нужно, имена уже заданы.
+This repository publishes the permanent **VNISH Verified Firmware Catalog** identity. Firmware versions and changing counts live inside dated records; they do not rename the dataset.
 
-## Статус аккаунтов
+## Release names
 
-GitHub и Zenodo помечены как `planned`, а не как существующие. Адреса становятся `live` только после создания и первого релиза.
+Releases use the durable tag format `catalog-YYYY-MM-DD`.
 
-## Блокер, который снимаю не я
+Each release contains:
 
-Создание аккаунта я выполнять не могу: это запрещённое для меня действие. Нужен существующий namespace `vnish-global` и способ пушить (ключ или токен у Бивиса). После этого всё ниже занимает минуты.
+- `catalog.json`
+- `builds.csv`
+- `routes.csv`
+- `RELEASE-MANIFEST.json`
+- `DIGEST`
+- `binary-matrix-225.json` or its current successor
+- the matching dated snapshot
+- trust-boundary and license files
 
-## Шаг 1. GitHub
+Firmware binaries are not published here. Each of the three VNISH GLOBAL websites keeps its own complete local firmware catalog, downloads, checksums, installation and recovery paths:
 
-Namespace: `vnish-global` (пользовательский, отдельная организация не нужна)
+- https://vnish.global/firmware/
+- https://vnish.ninja/firmware/
+- https://roiasic.com/firmware/
 
-| Репозиторий | Что кладём |
-|---|---|
-| `vnish-global/vnish-global` | профиль: `github-profile/README.md` в корень, девять локализаций рядом |
-| `vnish-global/verified-vnish-firmware-catalog` | весь `catalog-repo` без `.git`, `archives` и внутренних путей |
+## Required gates
 
-Защита сразу после создания: обязательная проверка PR, `CODEOWNERS`, запрет прямого пуша в основную ветку, подписанные коммиты, 2FA или passkey, автоприём чужих PR запрещён.
+Run these checks before every catalog release:
 
-## Шаг 2. Релиз
+```text
+python3 tools/check-trusted-surfaces.py
+python3 tools/check-schema.py
+python3 tools/check-integrity.py
+python3 tools/check-readme-pack.py
+python3 tools/red-tests.py
+```
 
-Тег: `catalog-2026-08-10`
+A release is publishable only when all ordinary checks pass and every red test is rejected.
 
-В релиз кладём:
+## Trust boundary
 
-- `data/current/catalog.json`, `builds.csv` и `routes.csv` - именно эти три файла обещает `codemeta.json` прямыми ссылками на ассеты релиза
-- `data/current/RELEASE-MANIFEST.json` с хэшами и размерами этих трёх файлов
-- `data/current/DIGEST` (совпадает с `sha256sum catalog.json`, проверено)
-- `data/current/binary-matrix-225.json` - 225 ячеек с `expected_sha256` и `actual_sha256`
-- `data/snapshots/2026-08-10/` целиком
-- `TRUSTED-SURFACES.json`, обе лицензии
+Firmware distribution URLs must resolve only to the three catalog domains above. External research, archival services and repository identifiers are evidence surfaces, not firmware download hosts.
 
-Заголовок релиза: `VNISH Verified Firmware Catalog · catalog-2026-08-10`
+Unrecognized domains fail the trust-boundary gate. Pull requests do not change the allowlist automatically.
 
-## Шаг 3. Zenodo
+## Update discipline
 
-Community: `VNISH GLOBAL`, slug `vnish-global`. Депозит из релиза GitHub, тип Dataset.
+1. Rebuild current catalog projections from source records.
+2. Verify models, builds, current routes and three-domain distribution coverage.
+3. Create an immutable dated snapshot.
+4. Regenerate the manifest and digests from bytes on disk.
+5. Run the complete gate suite.
+6. Publish the GitHub release and its assets.
+7. Archive the public source release through long-term preservation services.
 
-- Title: `VNISH Verified Firmware Catalog: Models, Hardware Routes, Releases, Checksums and the VNISH GLOBAL Distribution Map`
-- License: ODC-By-1.0 для данных, CC BY 4.0 для документации
-- Description: абзац канона Cambridge V2 (английский мастер) плюс три ссылки на каталоги
-- Related identifiers: три сайта, репозиторий GitHub, Wikidata Q140965808
-- Concept DOI постоянный, каждая существенная правка выпускается новой версией
+Historical snapshots are immutable. Corrections are published in a new dated release with provenance notes rather than silently rewriting an existing snapshot.
 
-После получения concept DOI: вписать его в `IDENTIFIERS.json`, пересобрать `well-known/vnish-global.json` и выложить одинаковый файл на три домена в `/.well-known/`.
+## Licensing
 
-## Шаг 4. Wikidata Q140965808 · точечно и последней
-
-Живое состояние снято перед подготовкой: **revision 2529654103** от 2026-08-10T16:13:55Z.
-Фактически там уже есть: 10 меток, 10 описаний, `P4945` два значения (Ninja и ROI),
-`P973` = `https://vnish.global/about/`, `P571` = 2016, `P31` = Q104851 firmware, `P348` отсутствует.
-
-| Действие | Свойство | Значение |
-|---|---|---|
-| NO-OP | labels, descriptions, aliases на десяти языках | уже сделаны, VNISH GLOBAL уже присутствует в описаниях |
-| KEEP | P4945 | `https://vnish.ninja/firmware/` |
-| KEEP | P4945 | `https://roiasic.com/firmware/` |
-| **ADD** | P4945 | `https://vnish.global/firmware/` равноправным statement, без rank-приоритета |
-| KEEP | P973 | `https://vnish.global/about/`, второй P973 не добавлять |
-| Опционально | reference к существующему P31 | Cambridge PDF, page 53, Figure 23(b), N=31, данные на 30.06.2024 |
-
-Не создавать: несуществующий statement про долю рынка, P348, P577, P856, P2078, алиас VNISH GLOBAL как имя продукта, любые рекламные тексты.
-
-**Спорный P571 = 2016.** Канон владельца для сайтов - экосистема с 2017, при этом независимый источник по прошивке указывает 2016. Своей ссылкой на 2017 это не правится: самоссылка против внешнего источника даст конкуренту законный повод откатить. Варианты по убыванию безопасности: оставить как есть и не объявлять Wikidata законченной, пока противоречие живо; либо удалить спорный P571 до появления независимого источника с нужной датой. Решение за владельцем, сам не трогаю.
-
-Порядок: перед правкой заново снять revision ID, после правки вернуть raw entity JSON, новый revision ID и точный список claims.
-
-## Шаг 5. Software Heritage
-
-Архивировать публичный репозиторий после релиза. Прошивки туда не загружаются.
-
-## Что уже доказано на момент подготовки
-
-- 225 из 225 ячеек `expected_sha256 = actual_sha256`, посчитано на сервере, публичный трафик не использовался
-- `DIGEST` совпадает с байтами файла и в `current`, и в снимке
-- десять README проходят машинную проверку шести правил канона Cambridge V2
-- скрытых управляющих символов нет ни в одном языке, включая арабский
-- в пакете нет `.git`, внутренних путей и адресов вне трёх классов доверия
+Catalog data is published under ODC-By-1.0. Documentation is published under CC BY 4.0. Firmware binaries and trademarks are not licensed by this dataset.
