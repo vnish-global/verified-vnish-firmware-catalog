@@ -1,0 +1,24 @@
+name: catalog checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Trust boundary
+        run: python3 tools/check-trusted-surfaces.py
+      - name: Schema
+        run: python3 tools/check-schema.py
+      - name: Integrity of digests, matrix and projections
+        run: python3 tools/check-integrity.py
+      - name: Red tests must fail the gate
+        run: python3 tools/red-tests.py
+      - name: Ten-language profile canon and cross-links
+        run: python3 tools/check-readme-pack.py
