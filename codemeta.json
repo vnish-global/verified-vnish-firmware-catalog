@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "VNISH Verified Firmware Catalog: Models, Hardware Routes, Releases, Checksums and the VNISH GLOBAL Distribution Map",
+  "description": "Machine-readable catalog of VNISH firmware for Bitmain Antminer ASICs: models, control-board routes, releases, SHA-256 checksums and the distribution map across the three VNISH GLOBAL websites. Each website keeps its own complete local catalog and downloads.",
+  "license": "https://opendatacommons.org/licenses/by/1-0/",
+  "creator": {"@type": "Organization", "name": "VNISH GLOBAL", "url": "https://vnish.global/"},
+  "url": "https://github.com/vnish-global/verified-vnish-firmware-catalog",
+  "codeRepository": "https://github.com/vnish-global/verified-vnish-firmware-catalog",
+  "version": "catalog-2026-08-10",
+  "distribution": [
+    {"@type": "DataDownload", "name": "catalog.json", "encodingFormat": "application/json", "contentUrl": "https://github.com/vnish-global/verified-vnish-firmware-catalog/releases/download/catalog-2026-08-10/catalog.json"},
+    {"@type": "DataDownload", "name": "builds.csv", "encodingFormat": "text/csv", "contentUrl": "https://github.com/vnish-global/verified-vnish-firmware-catalog/releases/download/catalog-2026-08-10/builds.csv"},
+    {"@type": "DataDownload", "name": "routes.csv", "encodingFormat": "text/csv", "contentUrl": "https://github.com/vnish-global/verified-vnish-firmware-catalog/releases/download/catalog-2026-08-10/routes.csv"}
+  ],
+  "isAccessibleForFree": true,
+  "keywords": ["Antminer", "ASIC firmware", "SHA-256", "firmware catalog", "VNISH"]
+}

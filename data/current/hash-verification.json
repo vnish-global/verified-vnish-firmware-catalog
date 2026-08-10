@@ -1,0 +1,277 @@
+{
+ "scope": "Частичная независимая выборка через публичный HTTP: качались отдельные файлы с чередованием доменов.",
+ "superseded_by": "binary-matrix-225.json",
+ "status": "secondary evidence, NOT the final verdict",
+ "note": "Итоговая проверка сохранности выполнена серверным sha256sum по всем 225 ячейкам и находится в binary-matrix-225.json (225 PASS). Этот файл сохранён как независимая перекрёстная выборка меньшего охвата и не должен читаться как охват целиком.",
+ "cells_attempted": 38,
+ "cells_pass": 32,
+ "of_total_cells": 225,
+ "results": {
+  "vnish-s19apro-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "7e52784408017e661cee1d25b8989d513e1a909d18ab8d0b17d83beb1c009f18",
+   "got": "7e52784408017e661cee1d25b8989d513e1a909d18ab8d0b17d83beb1c009f18"
+  },
+  "vnish-s21pro-plus-aml-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "9493ad780bdd88182a55d369de8aa3358e6eee5d4b9fb63e36075cc833df5186",
+   "got": "9493ad780bdd88182a55d369de8aa3358e6eee5d4b9fb63e36075cc833df5186"
+  },
+  "vnish-s21plus-hydro-cv-nand-v1.3.5.tar.gz": {
+   "host": "roiasic.com",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "1b241e96879646b75cb7338743f1b19f9c2b625b0f7693714dd7dabfcc5e273c",
+   "got": "1b241e96879646b75cb7338743f1b19f9c2b625b0f7693714dd7dabfcc5e273c"
+  },
+  "vnish-u2l9h-aml-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "95a77bfa2e37a7be83cb277b4cc9ea257ed036af80f1f38de53be79e053d3110",
+   "got": "95a77bfa2e37a7be83cb277b4cc9ea257ed036af80f1f38de53be79e053d3110"
+  },
+  "vnish-s19a-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "8ab6982093eb996893b79bbf31e44bf656700699f16e1fe892dd2752f4d17609",
+   "got": "8ab6982093eb996893b79bbf31e44bf656700699f16e1fe892dd2752f4d17609"
+  },
+  "vnish-s21plus-plus-aml-nand-v1.3.5.tar.gz": {
+   "host": "roiasic.com",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "32bc1ff1bfd268710b2786d5008999e53dd7f5683af4b1bdf068e1d22ac92f26",
+   "got": "32bc1ff1bfd268710b2786d5008999e53dd7f5683af4b1bdf068e1d22ac92f26"
+  },
+  "vnish-t21-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "eff551bbe9e88ff9444d66dedac20ec7ae9b1c0d2bc6756eb57f0e02d69b4589",
+   "got": "eff551bbe9e88ff9444d66dedac20ec7ae9b1c0d2bc6756eb57f0e02d69b4589"
+  },
+  "vnish-s19j-xp-aml-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "b35732549f8a76524b6810fa43d0030cd1b3ec3bfd6858b65fc7eea48556745d",
+   "got": "b35732549f8a76524b6810fa43d0030cd1b3ec3bfd6858b65fc7eea48556745d"
+  },
+  "vnish-s19jpro-plus-bb-nand-v1.3.5.tar.gz": {
+   "host": "roiasic.com",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "ad9bf1a1a3dc1d83429bcdcd2193696a1ded061d188ac1499bdc82cac00fa28e",
+   "got": "ad9bf1a1a3dc1d83429bcdcd2193696a1ded061d188ac1499bdc82cac00fa28e"
+  },
+  "vnish-s19jpro-cv-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "3250bf081a00c600b798bf664dbbf192c59b59bcde6c0b14250ed257d5150872",
+   "got": "3250bf081a00c600b798bf664dbbf192c59b59bcde6c0b14250ed257d5150872"
+  },
+  "vnish-s19i-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "230578e081c774758f1b49dc72c7404b301089e88c18cdb5450284e298c0ed16",
+   "got": "230578e081c774758f1b49dc72c7404b301089e88c18cdb5450284e298c0ed16"
+  },
+  "vnish-t19-xil-nand-v1.3.5.tar.gz": {
+   "host": "roiasic.com",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "34d990bdf1a14b2e45d7b194aeacd6c6e8108e768e14ad34ce6c0ff8a41c748f",
+   "got": "34d990bdf1a14b2e45d7b194aeacd6c6e8108e768e14ad34ce6c0ff8a41c748f"
+  },
+  "vnish-t19pro-hydro-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "20137c73a96ecda325ef733a2cd9b45dca1d5155f8101065e03088b9c33e64e1",
+   "got": "20137c73a96ecda325ef733a2cd9b45dca1d5155f8101065e03088b9c33e64e1"
+  },
+  "vnish-u3s21exph-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "3baa1f0445b86ee4d2e7c6872c5ce824d5b8c35affee06388a297b61edc2cd59",
+   "got": "3baa1f0445b86ee4d2e7c6872c5ce824d5b8c35affee06388a297b61edc2cd59"
+  },
+  "vnish-s19xp-plus-aml-nand-v1.3.5.tar.gz": {
+   "host": "roiasic.com",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "cf789bbf2061d66f9c5d5f87c534c209d4dce46fcb276a112927449dfdbbd75d",
+   "got": "cf789bbf2061d66f9c5d5f87c534c209d4dce46fcb276a112927449dfdbbd75d"
+  },
+  "vnish-u3s19xph-cv-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "cc0e0045870247304045dc3e11a7e4c71241f067a56504355bb8c1a8b31429c4",
+   "got": "cc0e0045870247304045dc3e11a7e4c71241f067a56504355bb8c1a8b31429c4"
+  },
+  "vnish-s21e-hydro-aml-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "b2d6f069f5420b160115c894cf399e7f69baa273f660c8592afe4ac35a79369f",
+   "got": "b2d6f069f5420b160115c894cf399e7f69baa273f660c8592afe4ac35a79369f"
+  },
+  "vnish-s21e-xp-hydro-xil-nand-v1.3.5.tar.gz": {
+   "host": "roiasic.com",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "ea73fdf847c67ee03b090af518e9d11b1ed81d005a21038793f013f06dae274b",
+   "got": "ea73fdf847c67ee03b090af518e9d11b1ed81d005a21038793f013f06dae274b"
+  },
+  "vnish-s21e-hydro-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "4d72def8d726b889f365ff03f2f38409b8701908ad85bb2e7ff68352b23426e2",
+   "got": "4d72def8d726b889f365ff03f2f38409b8701908ad85bb2e7ff68352b23426e2"
+  },
+  "vnish-s19j-plus-aml-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "24778f62e33090e6468941400eee4e4160195fcfa7dcd4c9849538da53a35707",
+   "got": "24778f62e33090e6468941400eee4e4160195fcfa7dcd4c9849538da53a35707"
+  },
+  "vnish-s19j-xp-xil-nand-v1.3.5.tar.gz": {
+   "host": "roiasic.com",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "5843eaa485790b1093977dc1aa78e7bc8e7ac8300158057d673f4a463d5995f9",
+   "got": "5843eaa485790b1093977dc1aa78e7bc8e7ac8300158057d673f4a463d5995f9"
+  },
+  "vnish-s19jpro-a-cv-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "4ba848b4a59ddc6763a91be97b841e26da0d9359bdfa33cab977c17f978e7797",
+   "got": "4ba848b4a59ddc6763a91be97b841e26da0d9359bdfa33cab977c17f978e7797"
+  },
+  "vnish-s19xp-plus-hydro-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "6b96d858a5d8c3db4c1121c06b980482cded8aa5d14eda3723a2925a9030cbf8",
+   "got": "6b96d858a5d8c3db4c1121c06b980482cded8aa5d14eda3723a2925a9030cbf8"
+  },
+  "vnish-s21-aml-nand-v1.3.5.tar.gz": {
+   "host": "roiasic.com",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "da3d6312be551aeb8af90812dd41567cbaa3b87eb957dc7273414b9efbc1b6d9",
+   "got": "da3d6312be551aeb8af90812dd41567cbaa3b87eb957dc7273414b9efbc1b6d9"
+  },
+  "vnish-s21pro-aml-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "dcee247ff134ae1c3ddfe777f6174082ffe0cbea2d90232127facbc398b07793",
+   "got": "dcee247ff134ae1c3ddfe777f6174082ffe0cbea2d90232127facbc398b07793"
+  },
+  "vnish-l9-cv-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "b96c6e7b42f58215ea9a8baaa32d7d6775763f80e49ad7ec48934995f01fd518",
+   "got": "b96c6e7b42f58215ea9a8baaa32d7d6775763f80e49ad7ec48934995f01fd518"
+  },
+  "vnish-l7-xil-nand-v1.3.5.tar.gz": {
+   "host": "roiasic.com",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "fd8a0e9fd8da9f06c648317036b1d18c41d798563dbbaae6db23f17112532c57",
+   "got": "fd8a0e9fd8da9f06c648317036b1d18c41d798563dbbaae6db23f17112532c57"
+  },
+  "vnish-l9-aml-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "a5037649ec6832da708ca9d37ddf9e4b4f4afda10b00c1aa808c242e3944d7a2",
+   "got": "a5037649ec6832da708ca9d37ddf9e4b4f4afda10b00c1aa808c242e3944d7a2"
+  },
+  "vnish-s19jpro-bb-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "2be55945c1119a1c59929890dc5d919fdef4df57cace5992a7a202008e04f103",
+   "got": "2be55945c1119a1c59929890dc5d919fdef4df57cace5992a7a202008e04f103"
+  },
+  "vnish-s19-88-xil-nand-v1.3.5.tar.gz": {
+   "host": "roiasic.com",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "d161a3373ffead720eba5702dd87bcc28ed36d144103bc81c851d867f5e77dae",
+   "got": "d161a3373ffead720eba5702dd87bcc28ed36d144103bc81c851d867f5e77dae"
+  },
+  "vnish-s19j-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "7df27adc38bd2bc8c85d5ebab9dd67f95674394c7fbe4d9edd34cbcd5b217055",
+   "got": "7df27adc38bd2bc8c85d5ebab9dd67f95674394c7fbe4d9edd34cbcd5b217055"
+  },
+  "vnish-s19e-xp-hydro-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "PASS",
+   "note": "",
+   "expected": "9d52eb763cb71794bccb6c47fbba2404a6ed44165fab015b3a706afa9af8b06a",
+   "got": "9d52eb763cb71794bccb6c47fbba2404a6ed44165fab015b3a706afa9af8b06a"
+  },
+  "vnish-s19-88-bb-nand-v1.3.5.tar.gz": {
+   "host": "roiasic.com",
+   "verdict": "UNVERIFIED",
+   "note": "429, backoff 120s",
+   "expected": "6ee67be44572f07a5e29ef9c8051650ec43be518e95020394fb5ff38cc65a492",
+   "got": ""
+  },
+  "vnish-s19-126-aml-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "UNVERIFIED",
+   "note": "429, backoff 120s",
+   "expected": "88f72224051cb0e9546e682958f26b858aa89332ce1876cbd3b79581461a5549",
+   "got": ""
+  },
+  "vnish-s19-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "UNVERIFIED",
+   "note": "429, backoff 120s",
+   "expected": "5457531a2fa282c679a26a11955e09cf0574ad6ee726f1512215f3d40503ae0a",
+   "got": ""
+  },
+  "vnish-s19-88-aml-nand-v1.3.5.tar.gz": {
+   "host": "roiasic.com",
+   "verdict": "UNVERIFIED",
+   "note": "429, backoff 120s",
+   "expected": "f61725aa2e86d2e79c5f9712f4f873748a8311e93174e2563cbc246ba88c207d",
+   "got": ""
+  },
+  "vnish-s19-hydro-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.global",
+   "verdict": "UNVERIFIED",
+   "note": "429, backoff 120s",
+   "expected": "4829a0c691fd5915595b4f12df7790286671eeba2a11d0f4c0e8ae4db8b45ffa",
+   "got": ""
+  },
+  "vnish-s19j-plus-xil-nand-v1.3.5.tar.gz": {
+   "host": "vnish.ninja",
+   "verdict": "UNVERIFIED",
+   "note": "429, backoff 120s",
+   "expected": "f8a82f96e86e6ddb6c14a0d59844ba01e0e6d73d5a467643632d51b7cb33fa75",
+   "got": ""
+  }
+ }
+}

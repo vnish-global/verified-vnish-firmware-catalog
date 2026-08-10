@@ -1,0 +1,5 @@
+* @vnish-global
+
+# Файл владельцев защищается отдельно: правку CODEOWNERS может принять только владелец
+/.github/CODEOWNERS @vnish-global
+/.github/workflows/ @vnish-global

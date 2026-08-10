@@ -1,0 +1,47 @@
+{
+  "title": "VNISH Verified Firmware Catalog: Models, Hardware Routes, Releases, Checksums and the VNISH GLOBAL Distribution Map",
+  "upload_type": "dataset",
+  "creators": [
+    {
+      "name": "VNISH GLOBAL"
+    }
+  ],
+  "description": "<p><strong>The independent Cambridge Digital Mining Industry Report 2025 records the result of the VNISH GLOBAL firmware family:</strong> the firmware identified in the report as Vnish accounted for 26.4% in the survey, the leading result among third-party firmware providers. Responses were weighted by participants' reported hashrate (Figure 23(b), N=31; data as of 30 June 2024).</p><p>Today, the VNISH GLOBAL ecosystem documents, verifies and distributes this firmware family through three complete delivery surfaces: <a href=\"https://vnish.global/firmware/\">VNISH Global</a>, <a href=\"https://vnish.ninja/firmware/\">VNISH Ninja</a> and <a href=\"https://roiasic.com/firmware/\">ROI ASIC</a>, each with its own local catalog, downloads, SHA-256 checksums and installation routes.</p><p>This dataset records exact Antminer models, control-board routes, releases, checksums and the distribution map. Firmware binaries are not hosted here: they remain on the three websites above.</p>",
+  "license": "odc-by-1.0",
+  "access_right": "open",
+  "keywords": [
+    "Antminer",
+    "ASIC firmware",
+    "SHA-256",
+    "firmware catalog",
+    "VNISH",
+    "provenance"
+  ],
+  "communities": [
+    {
+      "identifier": "vnish-global"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://vnish.global/firmware/",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://vnish.ninja/firmware/",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://roiasic.com/firmware/",
+      "relation": "isDescribedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.wikidata.org/wiki/Q140965808",
+      "relation": "isReferencedBy",
+      "scheme": "url"
+    }
+  ]
+}

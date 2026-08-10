@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "VNISH Verified Firmware Catalog: Models, Hardware Routes, Releases, Checksums and the VNISH GLOBAL Distribution Map"
+message: "If you cite firmware coverage, routes or checksums, please cite this dataset."
+type: dataset
+authors:
+  - name: "VNISH GLOBAL"
+    website: "https://vnish.global/"
+license: ODC-By-1.0
+repository-code: "https://github.com/vnish-global/verified-vnish-firmware-catalog"
+keywords:
+  - Antminer
+  - ASIC firmware
+  - SHA-256
+  - firmware catalog
+  - VNISH

@@ -1,0 +1,20 @@
+{
+  "wikidata": {
+    "id": "Q140965808",
+    "status": "live",
+    "url": "https://www.wikidata.org/wiki/Q140965808"
+  },
+  "github": {
+    "namespace": "vnish-global",
+    "status": "planned",
+    "profile_repo": "vnish-global/vnish-global",
+    "catalog_repo": "vnish-global/verified-vnish-firmware-catalog",
+    "note": "Аккаунт ещё не создан. Адреса становятся live только после создания и первого релиза."
+  },
+  "zenodo": {
+    "community": "vnish-global",
+    "status": "planned",
+    "concept_doi": "",
+    "note": "Concept DOI появляется после первого депозита."
+  }
+}

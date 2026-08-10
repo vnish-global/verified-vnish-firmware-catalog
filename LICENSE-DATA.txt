@@ -1,0 +1,3 @@
+Данные каталога распространяются по ODC-By-1.0.
+https://opendatacommons.org/licenses/by/1-0/
+Атрибуция: VNISH GLOBAL (vnish.global, vnish.ninja, roiasic.com).

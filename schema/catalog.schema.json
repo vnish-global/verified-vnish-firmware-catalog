@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VNISH Verified Firmware Catalog",
+  "type": "object",
+  "required": [
+    "name",
+    "dataset_schema_version",
+    "network",
+    "counts",
+    "models",
+    "builds"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "short_name": {
+      "type": "string"
+    },
+    "dataset_schema_version": {
+      "type": "string",
+      "description": "версия схемы датасета, не версия прошивки"
+    },
+    "network": {
+      "type": "object",
+      "required": [
+        "name",
+        "sites"
+      ],
+      "properties": {
+        "name": {
+          "const": "VNISH GLOBAL"
+        },
+        "sites": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "models",
+        "builds",
+        "routes"
+      ],
+      "properties": {
+        "models": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "builds": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "routes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "firmware_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "model_id",
+          "name"
+        ]
+      }
+    },
+    "builds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "build_id",
+          "model_id",
+          "route_id",
+          "firmware_version",
+          "file_name",
+          "sha256",
+          "size_bytes",
+          "distribution"
+        ],
+        "properties": {
+          "firmware_version": {
+            "type": "string",
+            "description": "версия прошивки живёт в строке сборки"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "distribution": {
+            "type": "object",
+            "minProperties": 3,
+            "maxProperties": 3,
+            "description": "ровно три ключа: по одному хосту сети, файл на своём хосте",
+            "propertyNames": {
+              "enum": [
+                "vnish.global",
+                "vnish.ninja",
+                "roiasic.com"
+              ]
+            },
+            "additionalProperties": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "is_default": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

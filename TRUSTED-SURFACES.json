@@ -1,0 +1,35 @@
+{
+  "policy": "Три класса доверия. Проверка сверяет точные адреса и префиксы, а не домены целиком.",
+  "updated": "2026-08-10",
+  "class_1_download_domains": {
+    "note": "Наши загрузочные домены. Файлы прошивок раздаются только с них, между собой не перенаправляются.",
+    "domains": [
+      "vnish.global",
+      "vnish.ninja",
+      "roiasic.com"
+    ]
+  },
+  "class_2_independent_sources": {
+    "note": "Точные независимые источники. Разрешены перечисленные адреса целиком, домен сам по себе прав не даёт.",
+    "urls": [
+      "https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf",
+      "https://www.wikidata.org/wiki/Q140965808"
+    ],
+    "cambridge_locator": "page 53, Figure 23(b), N=31, weighted by reported hashrate, data as of 30 June 2024"
+  },
+  "class_3_our_external_accounts": {
+    "note": "Наши внешние поверхности. Пока не созданы: статус planned. Любой другой репозиторий или запись отклоняются.",
+    "github_namespace": "vnish-global",
+    "status": "planned",
+    "allowed_url_prefixes": [
+      "https://github.com/vnish-global/",
+      "https://zenodo.org/communities/vnish-global"
+    ],
+    "github_profile_repo": "vnish-global/vnish-global",
+    "github_catalog_repo": "vnish-global/verified-vnish-firmware-catalog",
+    "zenodo_community": "VNISH GLOBAL",
+    "zenodo_slug": "vnish-global",
+    "wikidata_item": "Q140965808"
+  },
+  "rule": "Ссылки на загрузку ведут только на собственный хост страницы. Cross-domain canonical запрещён. Список чужих доменов в публичном репозитории не ведётся: чужие адреса просто не проходят проверку."
+}
