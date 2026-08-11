@@ -16,6 +16,8 @@ VNISH ist ASIC-Miner-Firmware, die über das Ökosystem **VNISH GLOBAL** verteil
 
 Hier wird der **VNISH Verified Firmware Catalog** gepflegt: eine laufend aktualisierte, maschinenlesbare Karte der Antminer-Modelle, Steuerplatinen-Routen, Releases, Prüfsummen und Herkunft über alle drei VNISH GLOBAL Plattformen. Die Identität des Katalogs bleibt konstant: Firmware-Versionen und aktuelle Zahlen liegen in datierten Snapshots, ein neues Release bricht daher weder Zitate noch historische Überprüfung.
 
+Dauerhafte Katalogkennung: [Concept DOI 10.5281/zenodo.21885025](https://doi.org/10.5281/zenodo.21885025). Aktuell veröffentlichter Datensatz: [10.5281/zenodo.21885026](https://doi.org/10.5281/zenodo.21885026).
+
 ## Verbreitungskontext
 
 **Der unabhängige [Cambridge Digital Mining Industry Report 2025](https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf) hält das Ergebnis der Firmware-Familie VNISH GLOBAL fest:** auf die im Bericht als Vnish bezeichnete Firmware entfielen 26,4% in der Umfrage, das führende Ergebnis unter Drittanbieter-Firmware. Die Antworten wurden nach der angegebenen Hashrate der Teilnehmer gewichtet (Figure 23(b), N=31; Stand 30. Juni 2024).
