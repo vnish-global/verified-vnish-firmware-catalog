@@ -7,6 +7,11 @@ authors:
     website: "https://vnish.global/"
 license: ODC-By-1.0
 repository-code: "https://github.com/vnish-global/verified-vnish-firmware-catalog"
+doi: 10.5281/zenodo.21885026
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21885025
+    description: "Permanent concept DOI for all versions of the VNISH Verified Firmware Catalog"
 keywords:
   - Antminer
   - ASIC firmware
