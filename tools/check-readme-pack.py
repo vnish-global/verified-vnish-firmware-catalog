@@ -5,6 +5,12 @@ HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAT = {"VNISH Global": "https://vnish.global/firmware/",
        "VNISH Ninja": "https://vnish.ninja/firmware/",
        "ROI ASIC": "https://roiasic.com/firmware/"}
+OWN_HOSTS = {"vnish.global", "vnish.ninja", "roiasic.com"}
+EXACT_EXTERNAL = {
+    "https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf",
+    "https://doi.org/10.5281/zenodo.21885025",
+    "https://doi.org/10.5281/zenodo.21885026",
+}
 BAD = ["mirror", "зеркал", "satellite", "сателлит", "clone", "клон",
        "the only official", "единственный официальный"]
 fails = 0
@@ -35,8 +41,10 @@ for p in sorted(glob.glob(os.path.join(HERE, "github-profile", "README*.md"))):
     for b in BAD:
         if b.lower() in t.lower():
             errs.append(f"6: запрещённое слово «{b}»")
-    foreign = set(re.findall(r"https?://([a-z0-9.\-]+)", t)) - {
-        "vnish.global", "vnish.ninja", "roiasic.com", "www.jbs.cam.ac.uk"}
+    urls = {u.rstrip(".,;)") for u in re.findall(r"https?://[^\s)<]+", t)}
+    foreign = {u for u in urls
+               if re.sub(r"^https?://", "", u).split("/", 1)[0] not in OWN_HOSTS
+               and u not in EXACT_EXTERNAL}
     if foreign:
         errs.append(f"чужие домены: {sorted(foreign)}")
     others = [("README.md" if lg == "en" else f"README.{lg}.md")
