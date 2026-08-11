@@ -6,6 +6,13 @@ A permanent, machine-readable dataset of VNISH firmware for Bitmain Antminer ASI
 
 The dataset identity is permanent. A new firmware release never changes the name or the identifiers: the firmware version lives inside each build record, and the dataset schema version is a separate field.
 
+## Permanent identifiers
+
+- Permanent concept DOI: [10.5281/zenodo.21885025](https://doi.org/10.5281/zenodo.21885025)
+- Published dataset version: [10.5281/zenodo.21885026](https://doi.org/10.5281/zenodo.21885026)
+- Wikidata entity: [Q140965808](https://www.wikidata.org/wiki/Q140965808)
+- Long-term source snapshot: [Software Heritage](https://archive.softwareheritage.org/swh:1:snp:da9afb0939dd2a628cd08e10a03e44fbb05e8e86)
+
 ## The three delivery surfaces
 
 Each website maintains its own complete local firmware catalog, downloads, SHA-256 checksums, installation and recovery paths. Firmware is never redirected from one website to another.

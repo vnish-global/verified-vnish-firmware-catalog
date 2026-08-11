@@ -28,16 +28,26 @@
     },
     "github": {
       "namespace": "vnish-global",
-      "status": "planned",
+      "status": "live",
       "profile_repo": "vnish-global/vnish-global",
       "catalog_repo": "vnish-global/verified-vnish-firmware-catalog",
-      "note": "Аккаунт ещё не создан. Адреса становятся live только после создания и первого релиза."
+      "profile_url": "https://github.com/vnish-global/",
+      "catalog_url": "https://github.com/vnish-global/verified-vnish-firmware-catalog",
+      "release_url": "https://github.com/vnish-global/verified-vnish-firmware-catalog/releases/tag/catalog-2026-08-10"
     },
     "zenodo": {
       "community": "vnish-global",
-      "status": "planned",
-      "concept_doi": "",
-      "note": "Concept DOI появляется после первого депозита."
+      "status": "live",
+      "community_url": "https://zenodo.org/communities/vnish-global",
+      "concept_doi": "10.5281/zenodo.21885025",
+      "concept_doi_url": "https://doi.org/10.5281/zenodo.21885025",
+      "version_doi": "10.5281/zenodo.21885026",
+      "record_url": "https://zenodo.org/records/21885026"
+    },
+    "software_heritage": {
+      "status": "live",
+      "snapshot_swhid": "swh:1:snp:da9afb0939dd2a628cd08e10a03e44fbb05e8e86",
+      "snapshot_url": "https://archive.softwareheritage.org/swh:1:snp:da9afb0939dd2a628cd08e10a03e44fbb05e8e86"
     }
   },
   "release": "catalog-2026-08-10",

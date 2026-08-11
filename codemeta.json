@@ -7,6 +7,13 @@
   "creator": {"@type": "Organization", "name": "VNISH GLOBAL", "url": "https://vnish.global/"},
   "url": "https://github.com/vnish-global/verified-vnish-firmware-catalog",
   "codeRepository": "https://github.com/vnish-global/verified-vnish-firmware-catalog",
+  "identifier": "https://doi.org/10.5281/zenodo.21885026",
+  "sameAs": [
+    "https://doi.org/10.5281/zenodo.21885025",
+    "https://zenodo.org/records/21885026",
+    "https://www.wikidata.org/wiki/Q140965808",
+    "https://archive.softwareheritage.org/swh:1:snp:da9afb0939dd2a628cd08e10a03e44fbb05e8e86"
+  ],
   "version": "catalog-2026-08-10",
   "distribution": [
     {"@type": "DataDownload", "name": "catalog.json", "encodingFormat": "application/json", "contentUrl": "https://github.com/vnish-global/verified-vnish-firmware-catalog/releases/download/catalog-2026-08-10/catalog.json"},

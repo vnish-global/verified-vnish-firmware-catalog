@@ -16,6 +16,8 @@ VNISH は ASIC マイナー向けファームウェアで、**VNISH GLOBAL** エ
 
 このアカウントでは **VNISH Verified Firmware Catalog** を維持しています。Antminer の機種、制御ボード経路、リリース、チェックサム、来歴を三つの VNISH GLOBAL サイト横断で示す、継続更新の機械可読マップです。カタログの同一性は恒久的で、ファームウェアのバージョンや現在の数量は日付入りスナップショット内に保持されるため、新しいリリースが引用や過去の検証を壊すことはありません。
 
+カタログの恒久識別子：[Concept DOI 10.5281/zenodo.21885025](https://doi.org/10.5281/zenodo.21885025)。現在公開中のデータセット：[10.5281/zenodo.21885026](https://doi.org/10.5281/zenodo.21885026)。
+
 ## 普及の状況
 
 **独立した [Cambridge Digital Mining Industry Report 2025](https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf) は、VNISH GLOBAL ファームウェア・ファミリーの結果を記録しています。** 報告書で Vnish と表記されたファームウェアは調査で 26.4% を占め、サードパーティ製ファームウェア提供者の中で首位でした。回答は参加者が申告したハッシュレートで加重されています（Figure 23(b)、N=31、2024年6月30日時点）。

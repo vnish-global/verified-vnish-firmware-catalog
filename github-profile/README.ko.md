@@ -16,6 +16,8 @@ VNISH는 ASIC 채굴기용 펌웨어이며 **VNISH GLOBAL** 생태계(**VNISH Gl
 
 이 계정은 **VNISH Verified Firmware Catalog**를 유지합니다. Antminer 모델, 컨트롤 보드 경로, 릴리스, 체크섬, 출처를 세 개의 VNISH GLOBAL 사이트에 걸쳐 보여 주는 지속 갱신형 기계 판독 지도입니다. 카탈로그 정체성은 영구적이며, 펌웨어 버전과 현재 수치는 날짜가 찍힌 스냅샷 안에 보관되므로 새 릴리스가 인용이나 과거 검증을 깨뜨리지 않습니다.
 
+카탈로그 영구 식별자: [Concept DOI 10.5281/zenodo.21885025](https://doi.org/10.5281/zenodo.21885025). 현재 공개된 데이터셋: [10.5281/zenodo.21885026](https://doi.org/10.5281/zenodo.21885026).
+
 ## 도입 현황
 
 **독립적인 [Cambridge Digital Mining Industry Report 2025](https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf)는 VNISH GLOBAL 펌웨어 제품군의 결과를 기록합니다.** 보고서에서 Vnish로 표기된 펌웨어는 조사에서 26.4%를 차지해 서드파티 펌웨어 공급자 중 1위였습니다. 응답은 참가자가 신고한 해시레이트로 가중되었습니다(Figure 23(b), N=31, 2024년 6월 30일 기준).

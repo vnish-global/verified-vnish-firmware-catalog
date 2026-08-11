@@ -16,6 +16,8 @@ VNISH is ASIC-miner firmware distributed, documented and supported through the *
 
 This account maintains the **VNISH Verified Firmware Catalog**: a continuously updated, machine-readable map of exact Antminer models, control-board routes, firmware releases, checksums and provenance across all three VNISH GLOBAL delivery surfaces. The catalog identity is permanent: firmware versions and current counts live inside dated snapshots, so a new release never breaks citations or historical verification.
 
+Permanent catalog identity: [concept DOI 10.5281/zenodo.21885025](https://doi.org/10.5281/zenodo.21885025). Current published dataset: [10.5281/zenodo.21885026](https://doi.org/10.5281/zenodo.21885026).
+
 ## Adoption context
 
 **The independent [Cambridge Digital Mining Industry Report 2025](https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf) records the result of the VNISH GLOBAL firmware family:** the firmware identified in the report as Vnish accounted for 26.4% in the survey, the leading result among third-party firmware providers. Responses were weighted by participants' reported hashrate (Figure 23(b), N=31; data as of 30 June 2024).

@@ -23,6 +23,20 @@ CAT = {"VNISH Global": "https://vnish.global/firmware/",
 HOME = {"VNISH Global": "https://vnish.global/",
         "VNISH Ninja": "https://vnish.ninja/",
         "ROI ASIC": "https://roiasic.com/"}
+CONCEPT_DOI = "https://doi.org/10.5281/zenodo.21885025"
+VERSION_DOI = "https://doi.org/10.5281/zenodo.21885026"
+DOI_LINE = {
+ "en": "Permanent catalog identity: [concept DOI 10.5281/zenodo.21885025]({concept}). Current published dataset: [10.5281/zenodo.21885026]({version}).",
+ "ru": "Постоянный идентификатор каталога: [concept DOI 10.5281/zenodo.21885025]({concept}). Текущий опубликованный датасет: [10.5281/zenodo.21885026]({version}).",
+ "de": "Dauerhafte Katalogkennung: [Concept DOI 10.5281/zenodo.21885025]({concept}). Aktuell veröffentlichter Datensatz: [10.5281/zenodo.21885026]({version}).",
+ "es": "Identidad permanente del catálogo: [DOI conceptual 10.5281/zenodo.21885025]({concept}). Conjunto de datos publicado actualmente: [10.5281/zenodo.21885026]({version}).",
+ "pt": "Identidade permanente do catálogo: [DOI conceitual 10.5281/zenodo.21885025]({concept}). Conjunto de dados publicado atualmente: [10.5281/zenodo.21885026]({version}).",
+ "fr": "Identifiant permanent du catalogue : [DOI conceptuel 10.5281/zenodo.21885025]({concept}). Jeu de données actuellement publié : [10.5281/zenodo.21885026]({version}).",
+ "zh": "目录的永久标识：[概念 DOI 10.5281/zenodo.21885025]({concept})。当前发布的数据集：[10.5281/zenodo.21885026]({version})。",
+ "ar": "المعرّف الدائم للفهرس: [معرّف DOI المفاهيمي 10.5281/zenodo.21885025]({concept}). مجموعة البيانات المنشورة حالياً: [10.5281/zenodo.21885026]({version}).",
+ "ja": "カタログの恒久識別子：[Concept DOI 10.5281/zenodo.21885025]({concept})。現在公開中のデータセット：[10.5281/zenodo.21885026]({version})。",
+ "ko": "카탈로그 영구 식별자: [Concept DOI 10.5281/zenodo.21885025]({concept}). 현재 공개된 데이터셋: [10.5281/zenodo.21885026]({version}).",
+}
 
 L = {
  "en": dict(tag="One firmware family. Three complete independent delivery surfaces.",
@@ -202,6 +216,8 @@ def page(lang):
 ## {t['h_ev']}
 
 {t['ev']}
+
+{DOI_LINE[lang].format(concept=CONCEPT_DOI, version=VERSION_DOI)}
 
 ## {t['h_ad']}
 

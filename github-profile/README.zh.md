@@ -16,6 +16,8 @@ VNISH 是用于 ASIC 矿机的固件，由 **VNISH GLOBAL** 生态负责分发�
 
 本账号维护 **VNISH Verified Firmware Catalog**：一份持续更新、机器可读的映射，覆盖 Antminer 机型、控制板路径、固件发布、校验值与来源，横跨三个 VNISH GLOBAL 站点。目录标识长期不变：固件版本与当前数量保存在带日期的快照中，新版本不会破坏引用或历史核验。
 
+目录的永久标识：[概念 DOI 10.5281/zenodo.21885025](https://doi.org/10.5281/zenodo.21885025)。当前发布的数据集：[10.5281/zenodo.21885026](https://doi.org/10.5281/zenodo.21885026)。
+
 ## 采用情况
 
 **独立的 [Cambridge Digital Mining Industry Report 2025](https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf) 记录了 VNISH GLOBAL 固件家族的结果：** 报告中标注为 Vnish 的固件在调查中占 26.4%，在第三方固件供应商中位列第一。回答按参与者申报的算力加权（Figure 23(b)，N=31；数据截至 2024 年 6 月 30 日）。
