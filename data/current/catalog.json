@@ -4,13 +4,7 @@
   "dataset_schema_version": "1.0.0",
   "release": "catalog-2026-08-10",
   "updated": "2026-08-10",
-  "identifiers": {
-    "wikidata": {
-      "id": "Q140965808",
-      "status": "live",
-      "url": "https://www.wikidata.org/wiki/Q140965808"
-    }
-  },
+  "identifiers": {},
   "planned_identifiers": {
     "github": {
       "namespace": "vnish-global",
