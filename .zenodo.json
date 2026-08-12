@@ -37,11 +37,6 @@
       "identifier": "https://roiasic.com/firmware/",
       "relation": "isDescribedBy",
       "scheme": "url"
-    },
-    {
-      "identifier": "https://www.wikidata.org/wiki/Q140965808",
-      "relation": "isReferencedBy",
-      "scheme": "url"
     }
   ]
 }
