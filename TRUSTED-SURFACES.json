@@ -13,7 +13,6 @@
     "note": "Точные независимые источники. Разрешены перечисленные адреса целиком, домен сам по себе прав не даёт.",
     "urls": [
       "https://www.jbs.cam.ac.uk/wp-content/uploads/2025/04/2025-04-cambridge-digital-mining-industry-report.pdf",
-      "https://www.wikidata.org/wiki/Q140965808",
       "https://archive.softwareheritage.org/swh:1:snp:da9afb0939dd2a628cd08e10a03e44fbb05e8e86"
     ],
     "cambridge_locator": "page 53, Figure 23(b), N=31, weighted by reported hashrate, data as of 30 June 2024"
@@ -32,8 +31,7 @@
     "zenodo_community": "VNISH GLOBAL",
     "zenodo_slug": "vnish-global",
     "zenodo_concept_doi": "10.5281/zenodo.21885025",
-    "zenodo_version_doi": "10.5281/zenodo.21885026",
-    "wikidata_item": "Q140965808"
+    "zenodo_version_doi": "10.5281/zenodo.21885026"
   },
   "rule": "Ссылки на загрузку ведут только на собственный хост страницы. Cross-domain canonical запрещён. Список чужих доменов в публичном репозитории не ведётся: чужие адреса просто не проходят проверку."
 }
