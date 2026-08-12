@@ -8,7 +8,6 @@
 
 - Постоянный concept DOI: [10.5281/zenodo.21885025](https://doi.org/10.5281/zenodo.21885025)
 - Опубликованная версия датасета: [10.5281/zenodo.21885026](https://doi.org/10.5281/zenodo.21885026)
-- Сущность Wikidata: [Q140965808](https://www.wikidata.org/wiki/Q140965808)
 - Долговременный снимок исходников: [Software Heritage](https://archive.softwareheritage.org/swh:1:snp:da9afb0939dd2a628cd08e10a03e44fbb05e8e86)
 
 ## Сеть
