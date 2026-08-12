@@ -18,8 +18,8 @@
   "current_builds": 75,
   "files": {
     "catalog.json": {
-      "sha256": "028994d24ae05e0649613bbc5cb10e9d3f69ae2c33b4e12e9854dee0afe0eb2e",
-      "size_bytes": 167260
+      "sha256": "f1b2cf006b35a7483f7cee8c936e2f986ed07ce9dc188a245bc1a4da0c5a02b8",
+      "size_bytes": 167127
     },
     "builds.csv": {
       "sha256": "782bfb984032377e0fabcd47f6c596c31d2c8a2d1d28796f8209c5046ebf0897",

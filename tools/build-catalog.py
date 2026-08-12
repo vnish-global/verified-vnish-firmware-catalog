@@ -38,7 +38,7 @@ def load_ids():
     p = os.path.join(HERE, "IDENTIFIERS.json")
     if os.path.exists(p):
         return json.load(open(p, encoding="utf-8"))
-    return {"github": "", "zenodo_concept_doi": "", "wikidata": "Q140965808"}
+    return {}
 
 
 def build(date=None, release=None, snapshot=False):

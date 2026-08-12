@@ -18,14 +18,9 @@
       "1.3.5",
       "1.3.4"
     ],
-    "digest_sha256": "028994d24ae05e0649613bbc5cb10e9d3f69ae2c33b4e12e9854dee0afe0eb2e"
+    "digest_sha256": "f1b2cf006b35a7483f7cee8c936e2f986ed07ce9dc188a245bc1a4da0c5a02b8"
   },
   "identifiers": {
-    "wikidata": {
-      "id": "Q140965808",
-      "status": "live",
-      "url": "https://www.wikidata.org/wiki/Q140965808"
-    },
     "github": {
       "namespace": "vnish-global",
       "status": "live",
