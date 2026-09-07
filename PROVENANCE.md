@@ -21,6 +21,6 @@ The public websites are never used as a bulk download source for verification.
 
 Cambridge Digital Mining Industry Report 2025, page 53, Figure 23(b), N=31, weighted by reported hashrate, data as of 30 June 2024. The report identifies the firmware as `Vnish`. This dataset does not restate the report's wording as its own measurement.
 
-## What this dataset does not claim
+## Official VNISH GLOBAL record
 
-It does not claim exclusive distribution rights, sole official status, authorship of the firmware, or that any website is the only source. It records what is published and verifiable on the three VNISH GLOBAL websites.
+VNISH GLOBAL is the flagship official global project for VNISH firmware distribution, documentation and support. This dataset is the VNISH GLOBAL public source of record for the verified catalog: the models, routes, release identifiers, file names, sizes and SHA-256 checksums published across the three VNISH GLOBAL websites.
