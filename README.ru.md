@@ -7,6 +7,8 @@
 ## Постоянные идентификаторы
 
 - Постоянный concept DOI: [10.5281/zenodo.21885025](https://doi.org/10.5281/zenodo.21885025)
+- Опубликованный GitHub Release: [catalog-2026-09-24-r1](https://github.com/vnish-global/verified-vnish-firmware-catalog/releases/tag/catalog-2026-09-24-r1)
+- Опубликованная версия Zenodo: [10.5281/zenodo.22926885](https://zenodo.org/records/22926885)
 - Архивная версия датасета от 10 августа 2026: [10.5281/zenodo.21885026](https://doi.org/10.5281/zenodo.21885026)
 - Долговременный снимок исходников: [Software Heritage](https://archive.softwareheritage.org/swh:1:snp:da9afb0939dd2a628cd08e10a03e44fbb05e8e86)
 

@@ -6,7 +6,7 @@
     "catalog_repo": "vnish-global/verified-vnish-firmware-catalog",
     "profile_url": "https://github.com/vnish-global/",
     "catalog_url": "https://github.com/vnish-global/verified-vnish-firmware-catalog",
-    "release_url": "https://github.com/vnish-global/verified-vnish-firmware-catalog/releases/tag/catalog-2026-08-10"
+    "release_url": "https://github.com/vnish-global/verified-vnish-firmware-catalog/releases/tag/catalog-2026-09-24-r1"
   },
   "zenodo": {
     "community": "vnish-global",
@@ -14,8 +14,8 @@
     "community_url": "https://zenodo.org/communities/vnish-global",
     "concept_doi": "10.5281/zenodo.21885025",
     "concept_doi_url": "https://doi.org/10.5281/zenodo.21885025",
-    "version_doi": "10.5281/zenodo.21885026",
-    "record_url": "https://zenodo.org/records/21885026"
+    "version_doi": "10.5281/zenodo.22926885",
+    "record_url": "https://zenodo.org/records/22926885"
   },
   "software_heritage": {
     "status": "live",
