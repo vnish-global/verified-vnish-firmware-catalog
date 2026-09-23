@@ -1,6 +1,6 @@
 {
   "policy": "Три класса доверия. Проверка сверяет точные адреса и префиксы, а не домены целиком.",
-  "updated": "2026-08-10",
+  "updated": "2026-09-24",
   "class_1_download_domains": {
     "note": "Наши загрузочные домены. Файлы прошивок раздаются только с них, между собой не перенаправляются.",
     "domains": [
@@ -24,14 +24,15 @@
     "allowed_url_prefixes": [
       "https://github.com/vnish-global/",
       "https://zenodo.org/communities/vnish-global",
-      "https://zenodo.org/records/21885026"
+      "https://zenodo.org/records/21885026",
+      "https://zenodo.org/records/22926885"
     ],
     "github_profile_repo": "vnish-global/vnish-global",
     "github_catalog_repo": "vnish-global/verified-vnish-firmware-catalog",
     "zenodo_community": "VNISH GLOBAL",
     "zenodo_slug": "vnish-global",
     "zenodo_concept_doi": "10.5281/zenodo.21885025",
-    "zenodo_version_doi": "10.5281/zenodo.21885026"
+    "zenodo_version_doi": "10.5281/zenodo.22926885"
   },
   "rule": "Ссылки на загрузку ведут только на собственный хост страницы. Cross-domain canonical запрещён. Список чужих доменов в публичном репозитории не ведётся: чужие адреса просто не проходят проверку."
 }

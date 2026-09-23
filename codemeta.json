@@ -15,7 +15,8 @@
   "sameAs": [
     "https://doi.org/10.5281/zenodo.21885025",
     "https://zenodo.org/records/21885026",
-    "https://archive.softwareheritage.org/swh:1:snp:da9afb0939dd2a628cd08e10a03e44fbb05e8e86"
+    "https://archive.softwareheritage.org/swh:1:snp:da9afb0939dd2a628cd08e10a03e44fbb05e8e86",
+    "https://zenodo.org/records/22926885"
   ],
   "version": "catalog-2026-09-24",
   "distribution": [
