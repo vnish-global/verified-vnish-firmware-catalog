@@ -1,33 +1,59 @@
 {
-  "release": "catalog-2026-08-10",
-  "updated": "2026-08-10",
+  "release": "catalog-2026-09-24",
+  "updated": "2026-09-24",
   "dataset_schema_version": "1.0.0",
   "counts": {
     "models": 47,
-    "builds": 148,
-    "routes": 75,
+    "builds": 224,
+    "routes": 76,
     "firmware_versions": [
+      "1.3.6",
       "1.3.5",
       "1.3.4"
     ],
     "builds_by_firmware_version": {
+      "1.3.6": 76,
       "1.3.5": 75,
       "1.3.4": 73
     }
   },
-  "current_builds": 75,
+  "current_builds": 76,
   "files": {
     "catalog.json": {
-      "sha256": "f1b2cf006b35a7483f7cee8c936e2f986ed07ce9dc188a245bc1a4da0c5a02b8",
-      "size_bytes": 167127
+      "sha256": "b4aa8dfe50dbe49235f971fcd0f96eaa1df10002831a86526ab693743292b0fb",
+      "size_bytes": 247371
     },
     "builds.csv": {
-      "sha256": "782bfb984032377e0fabcd47f6c596c31d2c8a2d1d28796f8209c5046ebf0897",
-      "size_bytes": 31942
+      "sha256": "869a6a9de9069f388e5385e05c93947d2b206d72ae0eaef7cf34a6192dddaa61",
+      "size_bytes": 48272
     },
     "routes.csv": {
-      "sha256": "1cc7bb95dd8ff59891bae34dc6affbc483d7698cc7a5b03183b79149ff970af0",
-      "size_bytes": 13254
+      "sha256": "ff1e1dfe28dbe3cf17815ee1fe3c9ce724d3f5045e719ac7933b80ac118da6b9",
+      "size_bytes": 13429
+    },
+    "metadata-verification.json": {
+      "sha256": "3546ffa1a040c158975ff2a805cbba049c976ca8829cd0d9c3ab8f604c149b30",
+      "size_bytes": 1393
+    },
+    "binary-matrix-225.json": {
+      "sha256": "b862a0df87107aae25067790c14e8d9152859280141c46c02c192f323b801b4a",
+      "size_bytes": 69162
+    },
+    "hash-verification.json": {
+      "sha256": "eaaa2c40a3ba146a9eda173d4bac58a6231d68d7c8d39e01a7bb0dacf5218eb4",
+      "size_bytes": 10915
+    },
+    "metadata-sources/vnish.global.json": {
+      "sha256": "52c7df0b0ce462fd1d55e93cf21ace8494b428cbb7d2b51543f696b08d208947",
+      "size_bytes": 228514
+    },
+    "metadata-sources/vnish.ninja.json": {
+      "sha256": "bd7b7278e5612f06d7b373fec7741bd13fd20687b00a192694d2ac8e1a6a1887",
+      "size_bytes": 56905
+    },
+    "metadata-sources/roiasic.com.json": {
+      "sha256": "7766b030d207092e462f8743b139ccfdafdbcdd6076cdf2407046907ecd1279c",
+      "size_bytes": 56790
     }
   }
 }
