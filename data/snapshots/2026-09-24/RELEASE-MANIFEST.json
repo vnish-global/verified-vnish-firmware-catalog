@@ -1,0 +1,35 @@
+{
+  "release": "catalog-2026-09-24",
+  "updated": "2026-09-24",
+  "dataset_schema_version": "1.0.0",
+  "counts": {
+    "models": 47,
+    "builds": 224,
+    "routes": 76,
+    "firmware_versions": [
+      "1.3.6",
+      "1.3.5",
+      "1.3.4"
+    ],
+    "builds_by_firmware_version": {
+      "1.3.6": 76,
+      "1.3.5": 75,
+      "1.3.4": 73
+    }
+  },
+  "current_builds": 76,
+  "files": {
+    "catalog.json": {
+      "sha256": "b4aa8dfe50dbe49235f971fcd0f96eaa1df10002831a86526ab693743292b0fb",
+      "size_bytes": 247371
+    },
+    "builds.csv": {
+      "sha256": "869a6a9de9069f388e5385e05c93947d2b206d72ae0eaef7cf34a6192dddaa61",
+      "size_bytes": 48272
+    },
+    "routes.csv": {
+      "sha256": "ff1e1dfe28dbe3cf17815ee1fe3c9ce724d3f5045e719ac7933b80ac118da6b9",
+      "size_bytes": 13429
+    }
+  }
+}

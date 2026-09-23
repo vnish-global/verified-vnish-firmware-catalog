@@ -1,0 +1,77 @@
+route_id,model_id,model_name,control_board,control_board_code,install_method,firmware_version,file_name,sha256,size_bytes
+l7-xil-nand,l7,Antminer L7,XIL,xil,nand,1.3.6,vnish-l7-xil-nand-v1.3.6.tar.gz,a14d438ecb4cd211b77b61e0c4b4cf86c0f5aeb2ee6baa8910daea42db0f49e4,16194989
+l9-aml-nand,l9,Antminer L9,AML,aml,nand,1.3.6,vnish-l9-aml-nand-v1.3.6.tar.gz,49b01f9326b27cb1fd355b9be998f5bddca8b7f06c19286578612c714ef837ff,21566744
+l9-cv-nand,l9,Antminer L9,CV,cv,nand,1.3.6,vnish-l9-cv-nand-v1.3.6.tar.gz,92c56b4ad27dca6e7fec345d117bd59966505e1ea3ace58455ba0373bc6d2ac0,12495929
+s19-126-aml-nand,s19-126,Antminer S19 (126),AML,aml,nand,1.3.6,vnish-s19-126-aml-nand-v1.3.6.tar.gz,ad4e2a55f0e917272cd09183f023f8e6bef859843f0adb8a28f7d01bf93d7fda,21570295
+s19-126-cv-nand,s19-126,Antminer S19 (126),CV,cv,nand,1.3.6,vnish-s19-126-cv-nand-v1.3.6.tar.gz,c66869a070f31e9867f783b47886baaff482d5a1acfc3e4eced7c2759730aa5b,12492923
+s19-126-xil-nand,s19-126,Antminer S19 (126),XIL,xil,nand,1.3.6,vnish-s19-126-xil-nand-v1.3.6.tar.gz,7e74dc46daa671f02dc91fbed14acbe41391f6075ab8417c87336890e57db264,16175885
+s19-88-aml-nand,s19-88,Antminer S19 (88),AML,aml,nand,1.3.6,vnish-s19-88-aml-nand-v1.3.6.tar.gz,2384899eaf540ffea0088126985c7a8ed07359c1353964ec00de741280ff1ce6,21569873
+s19-88-bb-nand,s19-88,Antminer S19 (88),BB,bb,nand,1.3.6,vnish-s19-88-bb-nand-v1.3.6.tar.gz,dd1883f67626be86a569327cdb0c6eddecf3bc85514c3c060d88b3d2b7f7d354,19255577
+s19-88-cv-nand,s19-88,Antminer S19 (88),CV,cv,nand,1.3.6,vnish-s19-88-cv-nand-v1.3.6.tar.gz,39d9ab99e0a5c9cf8e836d7ffe9e958c7d36b5e1886ef4b162c5b6abdffbbf9f,12485250
+s19-88-xil-nand,s19-88,Antminer S19 (88),XIL,xil,nand,1.3.6,vnish-s19-88-xil-nand-v1.3.6.tar.gz,c71736168e6b5908345c77c88c951280ae290c2b549a4cf30573a56e99db9100,16193013
+s19-hydro-xil-nand,s19-hydro,Antminer S19 Hydro,XIL,xil,nand,1.3.6,vnish-s19-hydro-xil-nand-v1.3.6.tar.gz,3062b503d96d30c381a4b07ba3e2ea87ffe42c07c51f1d0d2ff0484dccfee3a5,16174277
+s19-xil-nand,s19,Antminer S19,XIL,xil,nand,1.3.6,vnish-s19-xil-nand-v1.3.6.tar.gz,cc6b38f5d908a966f1d9af918250dcef6cce4a7eef63f08f8c5d39fa849d826a,16173634
+s19a-xil-nand,s19a,Antminer S19a,XIL,xil,nand,1.3.6,vnish-s19a-xil-nand-v1.3.6.tar.gz,edc7492d29b51fc667b5cad5c1d84785d0c99ecc7b726a8312ce55451d2d03ff,16176081
+s19apro-xil-nand,s19apro,Antminer S19A Pro,XIL,xil,nand,1.3.6,vnish-s19apro-xil-nand-v1.3.6.tar.gz,ce124a655954f9f69ee1b7edafbfe0ea102451782a452d1be28c97108a9c4d2c,16178188
+s19e-xp-hydro-xil-nand,s19e-xp-hydro,Antminer S19e XP Hydro,XIL,xil,nand,1.3.6,vnish-s19e-xp-hydro-xil-nand-v1.3.6.tar.gz,2115a8cdd83f35f9e5b87053249de310d90aa2a346044863469d3266d5e82cf5,16168594
+s19i-xil-nand,s19i,Antminer S19i,XIL,xil,nand,1.3.6,vnish-s19i-xil-nand-v1.3.6.tar.gz,0a080e0e911eca44cc3bf3589bfc4bfa75da88585542c455d7ff8821a7155c00,16195863
+s19j-bb-nand,s19j,Antminer S19j,BB,bb,nand,1.3.6,vnish-s19j-bb-nand-v1.3.6.tar.gz,f48505875dbacd69a118c530b9b40824be17e92ff20fc2175228e1aae71f46d4,19256521
+s19j-cv-nand,s19j,Antminer S19j,CV,cv,nand,1.3.6,vnish-s19j-cv-nand-v1.3.6.tar.gz,2c591174d202088c929d74d968e6f127723316fb9146d352b6d423e257dabd57,12491685
+s19j-plus-aml-nand,s19j-plus,Antminer S19j+,AML,aml,nand,1.3.6,vnish-s19j-plus-aml-nand-v1.3.6.tar.gz,de16592f91ce71bad66ebc5f13837d235c6d33ca1684008f874863e003bf8df8,21563504
+s19j-plus-bb-nand,s19j-plus,Antminer S19j+,BB,bb,nand,1.3.6,vnish-s19j-plus-bb-nand-v1.3.6.tar.gz,671ac24a66429cdd0b2b8c3b7e015929feebdc261f91c300d7bbb1a85abfae9a,19254488
+s19j-plus-cv-nand,s19j-plus,Antminer S19j+,CV,cv,nand,1.3.6,vnish-s19j-plus-cv-nand-v1.3.6.tar.gz,eb274c61c6eab9f656f85b452d474d79fde6a0fe45c40d6b8cee04583f05b0f6,12471734
+s19j-plus-xil-nand,s19j-plus,Antminer S19j+,XIL,xil,nand,1.3.6,vnish-s19j-plus-xil-nand-v1.3.6.tar.gz,6661f8c32ad7495c5eb9e7423e078642d202791bcf5820abb0499419dcbe189e,16192346
+s19j-xil-nand,s19j,Antminer S19j,XIL,xil,nand,1.3.6,vnish-s19j-xil-nand-v1.3.6.tar.gz,5b19039070417728d4818a57e1281472b29674e7d1d62a60be4a13ba0d023ae8,16189336
+s19j-xp-aml-nand,s19j-xp,Antminer S19j XP,AML,aml,nand,1.3.6,vnish-s19j-xp-aml-nand-v1.3.6.tar.gz,e06e7b26dbe765f1521f61d763758d20ff6a67d517e945f2b6b9ac4359e6555b,21564817
+s19j-xp-cv-nand,s19j-xp,Antminer S19j XP,CV,cv,nand,1.3.6,vnish-s19j-xp-cv-nand-v1.3.6.tar.gz,2ebfc3cf2640a4bd62c0ebbd7f3a3503b44302b3b7c5fbea70d55670947a6fe5,12471643
+s19j-xp-xil-nand,s19j-xp,Antminer S19j XP,XIL,xil,nand,1.3.6,vnish-s19j-xp-xil-nand-v1.3.6.tar.gz,6db4fb8a9e77d6f8fe3e85d92dfdd10eaafce3e3dd4533d73d07131ecba87a2f,16195465
+s19jpro-a-aml-nand,s19jpro-a,Antminer S19j Pro A,AML,aml,nand,1.3.6,vnish-s19jpro-a-aml-nand-v1.3.6.tar.gz,0d673a3261c562856cd21ab250bb3dc5191c94bf795e52a1e62acd991a741fae,21548184
+s19jpro-a-bb-nand,s19jpro-a,Antminer S19j Pro A,BB,bb,nand,1.3.6,vnish-s19jpro-a-bb-nand-v1.3.6.tar.gz,5d095865787a8c2ee2e7427d8deb15e73df63d2fd6d5c9f16c84643566c24d65,19250128
+s19jpro-a-cv-nand,s19jpro-a,Antminer S19j Pro A,CV,cv,nand,1.3.6,vnish-s19jpro-a-cv-nand-v1.3.6.tar.gz,3db78f3bd427e6f58a7c4a1c9bb4015e2183f800522a388b477f72ad4b234bec,12469746
+s19jpro-aml-nand,s19jpro,Antminer S19j Pro,AML,aml,nand,1.3.6,vnish-s19jpro-aml-nand-v1.3.6.tar.gz,bf679cbf6ff3c17bef870e93851de1ee7336aafcc44a06ecdba63fbd78bb29e6,21543992
+s19jpro-bb-nand,s19jpro,Antminer S19j Pro,BB,bb,nand,1.3.6,vnish-s19jpro-bb-nand-v1.3.6.tar.gz,8d9c33b10aab913db0efad0922f4005fe97f94e65e584cc189ed3242b670ce3c,19255457
+s19jpro-cv-nand,s19jpro,Antminer S19j Pro,CV,cv,nand,1.3.6,vnish-s19jpro-cv-nand-v1.3.6.tar.gz,731f00dbca57d33a8f200a0d1627225a23a5847259848846b6711e002d0734ed,12492328
+s19jpro-plus-aml-nand,s19jpro-plus,Antminer S19j Pro+,AML,aml,nand,1.3.6,vnish-s19jpro-plus-aml-nand-v1.3.6.tar.gz,c7422e9b5e4f55363a7710c4966ae5fea033d379f7b0fc50e27c0a3078354307,21567399
+s19jpro-plus-bb-nand,s19jpro-plus,Antminer S19j Pro+,BB,bb,nand,1.3.6,vnish-s19jpro-plus-bb-nand-v1.3.6.tar.gz,5590d41c2495ceeaac30802b5ef81d259a31c7758b701f6670fa9cfb3cc42a91,19277262
+s19jpro-plus-cv-nand,s19jpro-plus,Antminer S19j Pro+,CV,cv,nand,1.3.6,vnish-s19jpro-plus-cv-nand-v1.3.6.tar.gz,27a149f1199f14838bc3892afe77160436fc741f63a9ca3483e4c3552dcebeba,12490984
+s19jpro-plus-xil-nand,s19jpro-plus,Antminer S19j Pro+,XIL,xil,nand,1.3.6,vnish-s19jpro-plus-xil-nand-v1.3.6.tar.gz,4af5391057a905d080ebe98d04c6bd64ce80962efff2e9c7d8a625c4c003ddda,16192360
+s19jpro-xil-nand,s19jpro,Antminer S19j Pro,XIL,xil,nand,1.3.6,vnish-s19jpro-xil-nand-v1.3.6.tar.gz,3005840ae9cef5c2b3902d1647ed23fd54fe3fc9ae941d2c22508f7b6e7675db,16194392
+s19kpro-aml-nand,s19kpro,Antminer S19k Pro,AML,aml,nand,1.3.6,vnish-s19kpro-aml-nand-v1.3.6.tar.gz,3fd217485bd92cd7cba9f57c90cd04bbb763eaf111f381988aae922f7a0180be,21544721
+s19kpro-cv-nand,s19kpro,Antminer S19k Pro,CV,cv,nand,1.3.6,vnish-s19kpro-cv-nand-v1.3.6.tar.gz,4a829f96d264764f6ce466c62b009007c2bb30d663569aff9056bf00c76b21b9,12490682
+s19kpro-xil-nand,s19kpro,Antminer S19k Pro,XIL,xil,nand,1.3.6,vnish-s19kpro-xil-nand-v1.3.6.tar.gz,8a3746104029904273c8c4841fcde13718f4026cd18fbee22fb12d987d9561b8,16170891
+s19plus-xil-nand,s19plus,Antminer S19+,XIL,xil,nand,1.3.6,vnish-s19plus-xil-nand-v1.3.6.tar.gz,dabca262977086bdf480415bff3630dcc6cfbbb207e5abab2c4cd484b805f549,16192224
+s19pro-a-xil-nand,s19pro-a,Antminer S19 Pro-A,XIL,xil,nand,1.3.6,vnish-s19pro-a-xil-nand-v1.3.6.tar.gz,935fcdbdaeaff0f4f4af399d575a3590505f301f40384ac1094141d85ac9defc,16175775
+s19pro-hydro-120-xil-nand,s19pro-hydro-120,Antminer S19 Pro Hydro (120),XIL,xil,nand,1.3.6,vnish-s19pro-hydro-120-xil-nand-v1.3.6.tar.gz,b3dffef3a79458dc368d7ff48e561062a595798a7a77e9660f49c958b798fe3c,16172641
+s19pro-hydro-xil-nand,s19pro-hydro,Antminer S19 Pro Hydro,XIL,xil,nand,1.3.6,vnish-s19pro-hydro-xil-nand-v1.3.6.tar.gz,6023570fb6b3d2d0805bd842f604ed3f7d6092699c0bb81de99b900214bbed80,16177566
+s19pro-plus-hydro-xil-nand,s19pro-plus-hydro,Antminer S19 Pro+ Hydro,XIL,xil,nand,1.3.6,vnish-s19pro-plus-hydro-xil-nand-v1.3.6.tar.gz,79a7a8fb31593172bd2af1efbee8b18ba9d76400cf712992ad93c1be1bc6f035,16169130
+s19pro-xil-nand,s19pro,Antminer S19 Pro,XIL,xil,nand,1.3.6,vnish-s19pro-xil-nand-v1.3.6.tar.gz,78f0c0fdb34b580a5889a56f8fd69afce67d734860fc42863ef1d3ff39961f00,16170793
+s19xp-aml-nand,s19xp,Antminer S19 XP,AML,aml,nand,1.3.6,vnish-s19xp-aml-nand-v1.3.6.tar.gz,52b1cd1472e0ac37509d881245e9fee0a319d4535729b85bf6f78eda4bdfd229,21563149
+s19xp-cv-nand,s19xp,Antminer S19 XP,CV,cv,nand,1.3.6,vnish-s19xp-cv-nand-v1.3.6.tar.gz,95ebaa2072fb084dd5fbaacc29d1e90142c56a22457f8eb5f16838fc9b0a8cfa,12495027
+s19xp-hydro-xil-nand,s19xp-hydro,Antminer S19 XP Hydro,XIL,xil,nand,1.3.6,vnish-s19xp-hydro-xil-nand-v1.3.6.tar.gz,31e7f0ff5c260885807f5512c7faa2c6c97a6ff8047598bca1afd2dade423bf3,16173838
+s19xp-plus-aml-nand,s19xp-plus,Antminer S19 XP+,AML,aml,nand,1.3.6,vnish-s19xp-plus-aml-nand-v1.3.6.tar.gz,4ed36201908ec425f58d664dd8ed3cd464f4ef18a935e65e08401dbaec004c67,21567205
+s19xp-plus-hydro-xil-nand,s19xp-plus-hydro,Antminer S19 XP+ Hydro,XIL,xil,nand,1.3.6,vnish-s19xp-plus-hydro-xil-nand-v1.3.6.tar.gz,47838a6cf2f2f8d3aa2704b1438df28e13b54ac2c263cd741714e35b64d790eb,16172339
+s19xp-xil-nand,s19xp,Antminer S19 XP,XIL,xil,nand,1.3.6,vnish-s19xp-xil-nand-v1.3.6.tar.gz,3fc5ca522b40a0efdec5441776574c38dbbe17efd6702d88cb2ff69dd72e5dbc,16192938
+s21-aml-nand,s21,Antminer S21,AML,aml,nand,1.3.6,vnish-s21-aml-nand-v1.3.6.tar.gz,8679f6540f8b9f3cfe3f747d6d44399f8b277c7abaccc6efc99c3cdd52e15a2f,21565527
+s21-hydro-xil-nand,s21-hydro,Antminer S21 Hydro,XIL,xil,nand,1.3.6,vnish-s21-hydro-xil-nand-v1.3.6.tar.gz,090667373b519eb236ea0f27f1930d3b9fe29f89e514b7bb4596181105bd2c11,16193126
+s21-imm-aml-nand,s21-imm,Antminer S21 Imm,AML,aml,nand,1.3.6,vnish-s21-imm-aml-nand-v1.3.6.tar.gz,9f870d447b63baf9881f324987b4cff4a0e617bfd0c57f8ac2ae944dbb4ea827,21541011
+s21e-hydro-aml-nand,s21e-hydro,Antminer S21e Hydro,AML,aml,nand,1.3.6,vnish-s21e-hydro-aml-nand-v1.3.6.tar.gz,783ce12bf564d0b15bb8bd36862e24b6a1d6bd9aaa392d6c958c3ad371662baa,21547886
+s21e-hydro-xil-nand,s21e-hydro,Antminer S21e Hydro,XIL,xil,nand,1.3.6,vnish-s21e-hydro-xil-nand-v1.3.6.tar.gz,f547e90d98bf6e1d4a608054edd768014c1e11c854deb83022aeb19df387fa8a,16197304
+s21e-xp-hydro-xil-nand,s21e-xp-hydro,Antminer S21e XP Hydro,XIL,xil,nand,1.3.6,vnish-s21e-xp-hydro-xil-nand-v1.3.6.tar.gz,2b1c0b11bccddf95c39a54ce1852f4dc7a3e5b8ef1ffca34c575ae8718f3b313,16168780
+s21plus-aml-nand,s21plus,Antminer S21+,AML,aml,nand,1.3.6,vnish-s21plus-aml-nand-v1.3.6.tar.gz,095427ffde46c2d30391a2d161d107bca6550a5fd876a6315df6737588b6c717,21566634
+s21plus-hydro-cv-nand,s21plus-hydro,Antminer S21+ Hydro,CV,cv,nand,1.3.6,vnish-s21plus-hydro-cv-nand-v1.3.6.tar.gz,3afda487248d00170ecfc45dd021897c2509b9a4e507683c1e9446fa9ab7cfda,12466991
+s21plus-hydro-xil-nand,s21plus-hydro,Antminer S21+ Hydro,XIL,xil,nand,1.3.6,vnish-s21plus-hydro-xil-nand-v1.3.6.tar.gz,7d19576e0c2a68ba864c70f1e146f90e327d9a88280425eae45d1e9af68fb416,16179508
+s21plus-plus-aml-nand,s21plus-plus,Antminer S21++,AML,aml,nand,1.3.6,vnish-s21plus-plus-aml-nand-v1.3.6.tar.gz,9e9013c474284c8f237075d57666d0326984e53b03310cfbb621a5d26471a6e1,21542900
+s21pro-aml-nand,s21pro,Antminer S21 Pro,AML,aml,nand,1.3.6,vnish-s21pro-aml-nand-v1.3.6.tar.gz,6bbd6c87358a0f9ead780f41073ce4e74ae5e548aac3e14e2db131452d8e1098,21566387
+s21pro-plus-aml-nand,s21pro-plus,Antminer S21 Pro+,AML,aml,nand,1.3.6,vnish-s21pro-plus-aml-nand-v1.3.6.tar.gz,a668644ecf3f0283745a65aae8035af446d864149679eff6d60e235109ad488d,21562903
+s21xp-aml-nand,s21xp,Antminer S21 XP,AML,aml,nand,1.3.6,vnish-s21xp-aml-nand-v1.3.6.tar.gz,15a63b2fe0cf1e1d4d39d77002c796ced2a14568481e7e61b5404ff0ee02d313,21567276
+s21xp-hydro-xil-nand,s21xp-hydro,Antminer S21 XP Hydro,XIL,xil,nand,1.3.6,vnish-s21xp-hydro-xil-nand-v1.3.6.tar.gz,cd2dfa4b61ea08a7662d472c2e78dbf64afff4b49f2817718030fcb5489a15ef,16180089
+s21xp-imm-aml-nand,s21xp-imm,Antminer S21 XP Imm,AML,aml,nand,1.3.6,vnish-s21xp-imm-aml-nand-v1.3.6.tar.gz,7972546d0f009771ae5ef430efbe0caad2d26b5055ef19e6b62dbf1bd3c95e2d,21571208
+t19-hydro-xil-nand,t19-hydro,Antminer T19 Hydro,XIL,xil,nand,1.3.6,vnish-t19-hydro-xil-nand-v1.3.6.tar.gz,94eace28d6fbb722b6a944b21cdebdf8f15fcebab14e7f5ab2059b3ed54ee797,16198894
+t19-xil-nand,t19,Antminer T19,XIL,xil,nand,1.3.6,vnish-t19-xil-nand-v1.3.6.tar.gz,912e5f97ebedf318618c43b0256ceabe66df7ed4da5911c21f9ca6b06d60a447,16175587
+t19pro-hydro-xil-nand,t19pro-hydro,Antminer T19 Pro Hydro,XIL,xil,nand,1.3.6,vnish-t19pro-hydro-xil-nand-v1.3.6.tar.gz,f4dccedb66eed5fb4a642c8af40c24a922a2244563d068b8792f11087455bbd6,16175139
+t21-aml-nand,t21,Antminer T21,AML,aml,nand,1.3.6,vnish-t21-aml-nand-v1.3.6.tar.gz,447f8889958e97b17a48872c6c5b1ab666913076e072c48b58578f6d016bea5c,21571366
+t21-cv-nand,t21,Antminer T21,CV,cv,nand,1.3.6,vnish-t21-cv-nand-v1.3.6.tar.gz,4ae79f15cb3ad4438bdf412abc7531bc31c0c4130d20afaaa047ec99023077e8,12465843
+t21-xil-nand,t21,Antminer T21,XIL,xil,nand,1.3.6,vnish-t21-xil-nand-v1.3.6.tar.gz,7eb66da100dc4b7aaf26d5eb06c773647c2c4e866f3a88a8aef1b9e893c2b744,16194615
+u2l9h-aml-nand,u2l9h,Antminer U2L9H,AML,aml,nand,1.3.6,vnish-u2l9h-aml-nand-v1.3.6.tar.gz,9770e6762b5af26a77c5f9f2386b56c14fbc31e5bbdd6aa7711a5d96c872bf7f,21546324
+u3s19xph-cv-nand,u3s19xph,Antminer U3S19XP+H,CV,cv,nand,1.3.6,vnish-u3s19xph-cv-nand-v1.3.6.tar.gz,1c2b044217bb5cef85a08a50683331f2d2e8a4dbdda19307d8d608573df4c181,12494411
+u3s21exph-xil-nand,u3s21exph,Antminer U3S21EXPH,XIL,xil,nand,1.3.6,vnish-u3s21exph-xil-nand-v1.3.6.tar.gz,c2f9d826d6806d174bcb3b673d05a3db7ec2148d8ac86e6c26ca99c628acd9f8,16180937
