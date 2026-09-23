@@ -7,7 +7,7 @@
 ## Постоянные идентификаторы
 
 - Постоянный concept DOI: [10.5281/zenodo.21885025](https://doi.org/10.5281/zenodo.21885025)
-- Опубликованная версия датасета: [10.5281/zenodo.21885026](https://doi.org/10.5281/zenodo.21885026)
+- Архивная версия датасета от 10 августа 2026: [10.5281/zenodo.21885026](https://doi.org/10.5281/zenodo.21885026)
 - Долговременный снимок исходников: [Software Heritage](https://archive.softwareheritage.org/swh:1:snp:da9afb0939dd2a628cd08e10a03e44fbb05e8e86)
 
 ## Сеть
@@ -17,6 +17,18 @@
 - https://vnish.global
 - https://vnish.ninja
 - https://roiasic.com
+
+## Актуальный каталог
+
+Обновление метаданных от 24 сентября 2026 содержит 47 моделей, 224 записи сборок и 76 текущих маршрутов для VNISH 1.3.6
+
+75 сборок 1.3.5 и 73 сборки 1.3.4 сохранены как предыдущие выпуски
+
+Имена файлов, размеры, опубликованные SHA-256 и локальные URL загрузки 76 сборок совпали в JSON-каталогах всех трёх сайтов
+
+Сверка касается только метаданных, новые скачивания прошивок и вычисления SHA-256 бинарных файлов не выполнялись
+
+Матрица binary-matrix-225.json сохранена без изменений и относится к 1.3.5 от 10 августа 2026, а не к текущей 1.3.6
 
 ## Структура
 
@@ -37,8 +49,8 @@
 ## Проверки
 
 ```
-python3 tools/build-catalog.py                   # пересобрать data/current
-python3 tools/build-catalog.py --snapshot 2026-08-10
+VNISH_CATALOG_SRC=data/current/metadata-sources/vnish.global.json python3 tools/build-catalog.py --release catalog-2026-09-24
+# Исторические снимки в data/snapshots/ не перезаписываются
 python3 tools/check-trusted-surfaces.py          # чужих firmware-доменов быть не должно
 python3 tools/verify-distribution.py --limit 12  # файл каждой сборки на каждом сайте
 python3 tools/make-wellknown.py
