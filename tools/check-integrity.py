@@ -9,12 +9,13 @@
   2. digest в well-known равен digest текущего каталога;
   3. len(cells) == cells_expected == cells_computed, счётчики пересчитываются из cells;
   4. набор доменов матрицы точно равен network.sites;
-  5. на каждом домене ровно один уникальный файл на каждую текущую сборку, дублей нет;
+  5. на каждом домене одна ячейка на сборку версии, указанной в исторической матрице;
   6. expected каждой ячейки равен SHA соответствующей сборки в catalog.json;
   7. actual == expected, match == true, verdict == PASS;
   8. builds.csv - точная проекция всех build-записей;
   9. routes.csv - точная проекция всех is_default записей;
- 10. частичная выборка помечена как вторичная.
+ 10. частичная выборка помечена как вторичная;
+ 11. текущие метаданные совпадают с тремя сохранёнными публичными JSON-каталогами.
 """
 import csv
 import glob
@@ -56,17 +57,20 @@ if os.path.exists(wk):
     if load(wk)["catalog"].get("digest_sha256") != digest_of(os.path.join(cur_dir, "catalog.json")):
         errs.append("digest в well-known не равен digest каталога")
 
-# 3-7. матрица
+# 3-7. Historical binary evidence is scoped to its recorded firmware version
 m = load(os.path.join(cur_dir, "binary-matrix-225.json"))
 cells = m.get("cells", [])
-expect = len(current) * len(sites)
+matrix_builds = [b for b in doc["builds"] if b["firmware_version"] == m.get("firmware_version")]
+expect = len(matrix_builds) * len(sites)
+if not matrix_builds:
+    errs.append("matrix firmware version is absent from the catalog")
 if not (len(cells) == m.get("cells_expected") == m.get("cells_computed") == expect):
     errs.append(f"матрица: ячеек в файле {len(cells)}, заголовок "
                 f"{m.get('cells_expected')}/{m.get('cells_computed')}, ожидалось {expect}")
 if {c.get("domain") for c in cells} != set(sites):
     errs.append(f"домены матрицы не равны сети: {sorted({c.get('domain') for c in cells})}")
 
-by_sha = {b["file_name"]: b["sha256"] for b in current}
+by_sha = {b["file_name"]: b["sha256"] for b in matrix_builds}
 seen = set()
 for c in cells:
     key = (c.get("domain"), c.get("file"))
@@ -87,14 +91,75 @@ for c in cells:
         break
 for d in sites:
     files = [c["file"] for c in cells if c.get("domain") == d]
-    if len(files) != len(current) or set(files) != set(by_sha):
-        errs.append(f"на домене {d} покрытие не полное: {len(files)} из {len(current)}")
+    if len(files) != len(matrix_builds) or set(files) != set(by_sha):
+        errs.append(f"на домене {d} покрытие не полное: {len(files)} из {len(matrix_builds)}")
 
 p = sum(1 for c in cells if c.get("verdict") == "PASS")
 f = sum(1 for c in cells if c.get("verdict") == "FAIL")
 if m.get("pass") != p or m.get("fail") != f or m.get("unverified") != expect - len(cells):
     errs.append(f"счётчики в заголовке не сходятся с ячейками: заявлено "
                 f"{m.get('pass')}/{m.get('fail')}, факт {p}/{f}")
+
+# Current metadata has its own explicit evidence scope, separate from binary checks
+mpath = os.path.join(cur_dir, "metadata-verification.json")
+if not os.path.exists(mpath):
+    errs.append("current metadata verification is missing")
+else:
+    meta = load(mpath)
+    if meta.get("scope") != "Public JSON metadata comparison only" \
+            or meta.get("binary_files_downloaded") != 0 or meta.get("binary_sha256_recomputed") != 0:
+        errs.append("metadata verification must not claim binary verification")
+    if meta.get("current_builds") != len(current) or meta.get("metadata_cells_compared") != len(current) * len(sites):
+        errs.append("metadata verification counts disagree with current builds")
+    if {b["firmware_version"] for b in current} != {meta.get("firmware_version")}:
+        errs.append("metadata verification firmware version is stale")
+    sources = meta.get("sources", {})
+    if set(sources) != set(sites):
+        errs.append("metadata sources must cover exactly the three network sites")
+    loaded = {}
+    for domain in sites:
+        rec = sources.get(domain, {})
+        expected_path = "metadata-sources/" + domain + ".json"
+        if rec.get("path") != expected_path:
+            errs.append("metadata source path is outside its exact evidence location")
+            continue
+        fp = os.path.join(cur_dir, expected_path)
+        if not os.path.isfile(fp) or digest_of(fp) != rec.get("sha256") or os.path.getsize(fp) != rec.get("size_bytes"):
+            errs.append("metadata source digest or size mismatch: " + domain)
+            continue
+        loaded[domain] = load(fp)
+    if set(loaded) == set(sites):
+        global_source = loaded["vnish.global"]
+        source_builds = {b["id"]: b for b in global_source["builds"]}
+        if set(source_builds) != {b["build_id"] for b in doc["builds"]}:
+            errs.append("catalog build set differs from its source")
+        else:
+            for build in doc["builds"]:
+                source = source_builds[build["build_id"]]
+                fields = [("model_id", "model_id"), ("route_id", "route_id"), ("file_name", "file_name"),
+                          ("sha256", "sha256"), ("size_bytes", "size_bytes"), ("firmware_version", "version"),
+                          ("is_default", "is_default")]
+                if any(build.get(a) != source.get(b) for a, b in fields):
+                    errs.append("catalog build differs from source: " + build["build_id"])
+                    break
+        for domain in sites:
+            source = loaded[domain]
+            if domain == "vnish.global":
+                records = [{"file": b["file_name"], "sha256": b["sha256"], "size": b["size_bytes"],
+                            "url": "https://" + domain + b["download_path"]}
+                           for b in source["builds"] if b.get("is_default")]
+            else:
+                records = [b for model in source["models"] for b in model["boards"].values()]
+            by_name = {r["file"]: r for r in records}
+            if len(records) != len(by_name) or set(by_name) != {b["file_name"] for b in current}:
+                errs.append("current metadata file set mismatch: " + domain)
+                continue
+            for build in current:
+                row = by_name[build["file_name"]]
+                if row["sha256"] != build["sha256"] or row["size"] != build["size_bytes"] \
+                        or row["url"] != build["distribution"][domain]:
+                    errs.append("current metadata fields mismatch: " + domain + "/" + build["file_name"])
+                    break
 
 # 8-9. CSV как точные проекции
 def csv_rows(path):
@@ -189,4 +254,4 @@ if errs:
         print("  ", e)
     sys.exit(1)
 print(f"PASS: моделей {doc['counts']['models']} · сборок {len(doc['builds'])} · "
-      f"текущих сборок {len(current)} · матрица {p}/{expect} · CSV сходятся")
+      f"текущих сборок {len(current)} · historical binary matrix {p}/{expect} · current metadata and CSV agree")
