@@ -11,14 +11,15 @@
     "dataset_schema_version": "1.0.0",
     "counts": {
       "models": 47,
-      "builds": 148,
-      "routes": 75
+      "builds": 224,
+      "routes": 76
     },
     "firmware_versions": [
+      "1.3.6",
       "1.3.5",
       "1.3.4"
     ],
-    "digest_sha256": "f1b2cf006b35a7483f7cee8c936e2f986ed07ce9dc188a245bc1a4da0c5a02b8"
+    "digest_sha256": "b4aa8dfe50dbe49235f971fcd0f96eaa1df10002831a86526ab693743292b0fb"
   },
   "identifiers": {
     "github": {
@@ -45,6 +46,6 @@
       "snapshot_url": "https://archive.softwareheritage.org/swh:1:snp:da9afb0939dd2a628cd08e10a03e44fbb05e8e86"
     }
   },
-  "release": "catalog-2026-08-10",
-  "updated": "2026-08-10"
+  "release": "catalog-2026-09-24",
+  "updated": "2026-09-24"
 }
