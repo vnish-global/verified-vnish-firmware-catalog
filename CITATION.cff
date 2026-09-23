@@ -7,7 +7,7 @@ authors:
     website: "https://vnish.global/"
 license: ODC-By-1.0
 repository-code: "https://github.com/vnish-global/verified-vnish-firmware-catalog"
-doi: 10.5281/zenodo.21885026
+doi: 10.5281/zenodo.21885025
 identifiers:
   - type: doi
     value: 10.5281/zenodo.21885025

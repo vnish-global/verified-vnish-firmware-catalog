@@ -134,8 +134,36 @@ def t_null_updated(root):
         hashlib.sha256(open(fp, "rb").read()).hexdigest() + "  catalog.json\n")
 
 
+def refresh_metadata_manifest(root):
+    import hashlib
+    rel = "data/current/metadata-verification.json"
+    raw = open(os.path.join(root, rel), "rb").read()
+    mrel = "data/current/RELEASE-MANIFEST.json"
+    manifest = load(root, mrel)
+    manifest["files"]["metadata-verification.json"] = {"sha256": hashlib.sha256(raw).hexdigest(), "size_bytes": len(raw)}
+    save(root, mrel, manifest)
+
+
+def t_metadata_digest(root):
+    rel = "data/current/metadata-verification.json"
+    d = load(root, rel)
+    d["sources"]["vnish.ninja"]["sha256"] = "0" * 64
+    save(root, rel, d)
+    refresh_metadata_manifest(root)
+
+
+def t_metadata_binary_claim(root):
+    rel = "data/current/metadata-verification.json"
+    d = load(root, rel)
+    d["binary_sha256_recomputed"] = 228
+    save(root, rel, d)
+    refresh_metadata_manifest(root)
+
+
 print("красные тесты целостности:")
 results = [
+    mutate("metadata source digest mismatch", t_metadata_digest),
+    mutate("metadata pretending to be binary evidence", t_metadata_binary_claim),
     mutate("удалённая ячейка", t_deleted),
     mutate("дублированная ячейка", t_duplicated),
     mutate("выдуманный парный SHA (64 нуля)", t_fake_pair),

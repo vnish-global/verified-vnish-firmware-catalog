@@ -4,11 +4,19 @@
 
 Every model, route, file name, size and SHA-256 in this dataset is generated from the production firmware catalog maintained by VNISH GLOBAL. Nothing is written from memory and nothing is edited by hand: `tools/build-catalog.py` reads the source catalog and writes `data/current/`.
 
-## How integrity is proven
+## Current metadata comparison
+
+The 24 September 2026 update uses the three public JSON catalogs stored in data/current/metadata-sources and records their URLs, retrieval times and SHA-256 values in data/current/metadata-verification.json
+
+For the 76 current 1.3.6 builds, file names, sizes, published hashes and local URLs agree across those sources
+
+No firmware binaries were downloaded or rehashed for this metadata update
+
+## Historical binary verification for 1.3.5
 
 1. Expected checksums come from the source catalog.
 2. Actual checksums are computed with `sha256sum` on the origin servers of all three websites, over the files that the websites actually serve.
-3. Both values are recorded per cell in `data/current/binary-matrix-225.json`: 75 current builds x 3 websites = 225 cells.
+3. Both values are recorded per cell in `data/current/binary-matrix-225.json`: 75 builds of 1.3.5 across 3 websites, checked on 10 August 2026, total 225 cells
 4. A smaller independent cross-check is performed over public HTTP and kept in `data/current/hash-verification.json` as secondary evidence with an explicitly stated, narrower scope.
 
 The public websites are never used as a bulk download source for verification.

@@ -155,7 +155,13 @@ def build(date=None, release=None, snapshot=False):
         "current_builds": len(current),
         "files": {},
     }
-    for fn in ("catalog.json", "builds.csv", "routes.csv"):
+    manifest_files = ["catalog.json", "builds.csv", "routes.csv"]
+    if not snapshot:
+        manifest_files += ["metadata-verification.json", "binary-matrix-225.json", "hash-verification.json"]
+        manifest_files += ["metadata-sources/" + site.split("//")[1] + ".json" for site in SITES]
+    for fn in manifest_files:
+        if not os.path.isfile(os.path.join(out_dir, fn)):
+            continue
         fp = os.path.join(out_dir, fn)
         manifest["files"][fn] = {
             "sha256": hashlib.sha256(open(fp, "rb").read()).hexdigest(),
