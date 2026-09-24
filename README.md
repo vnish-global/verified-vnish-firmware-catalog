@@ -73,3 +73,9 @@ python3 tools/verify-distribution.py --limit 12      # public spot-check
 ```
 
 Russian version: [README.ru.md](README.ru.md)
+
+## Find a build by model and control board
+
+[Follow the worked example](examples/catalog-selection.md) or open the [executable notebook](examples/catalog-selection.ipynb) to select one default from the saved catalog and see each site's recorded installation route
+
+The example reads local metadata only and preserves the historical releases
