@@ -1,5 +1,19 @@
 # VNISH Verified Firmware Catalog
 
+## Скачать прошивку VNISH для Antminer S19 и S21
+
+Нужна сама прошивка VNISH (Вниш)? Здесь опубликованы данные каталога и документация. Файлы прошивок находятся на сайтах ниже: выберите страницу своей модели, чтобы перейти к скачиванию.
+
+| Сайт | Antminer S19 | Antminer S21 | Другие модели и модификации |
+| --- | --- | --- | --- |
+| VNISH GLOBAL | [Прошивка S19](https://vnish.global/ru/firmware/s19/) | [Прошивка S21](https://vnish.global/ru/firmware/s21/) | [Полный каталог](https://vnish.global/ru/firmware/) |
+| ROI ASIC | [Прошивка S19](https://roiasic.com/ru/firmware/s19/) | [Прошивка S21](https://roiasic.com/ru/firmware/s21/) | [Полный каталог](https://roiasic.com/ru/firmware/) |
+| VNISH Ninja | [Прошивка S19](https://vnish.ninja/ru/firmware/s19/) | [Прошивка S21](https://vnish.ninja/ru/firmware/s21/) | [Полный каталог](https://vnish.ninja/ru/firmware/) |
+
+Ссылки S19 и S21 выше относятся к базовым моделям. У S19 Pro, S19j Pro, S19 (126), S21 Pro, XP и Hydro отдельные записи: откройте полный каталог и до скачивания сверьте точное обозначение устройства и плату управления.
+
+На VNISH GLOBAL откройте страницу модели и перейдите по её ссылке на инструкцию к соответствующей загрузке. На ROI ASIC и VNISH Ninja кнопка скачивания и ссылка на установку находятся на странице модели. Перед установкой прочитайте подходящую инструкцию. Актуальная доступная версия указана на целевой странице, поэтому ссылки остаются полезными при смене релизов.
+
 **VNISH Verified Firmware Catalog: Models, Hardware Routes, Releases, Checksums and the VNISH GLOBAL Distribution Map**
 
 Постоянная сущность. Имя и идентификаторы не меняются при выходе новой версии прошивки: версия живёт внутри строки конкретной сборки, версия схемы датасета указана отдельно.
