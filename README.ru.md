@@ -57,3 +57,9 @@ python3 tools/check-trusted-surfaces.py          # чужих firmware-доме�
 python3 tools/verify-distribution.py --limit 12  # файл каждой сборки на каждом сайте
 python3 tools/make-wellknown.py
 ```
+
+## Найти сборку по модели и контрольной плате
+
+[Пошаговый пример](examples/catalog-selection.ru.md) и [исполняемый notebook](examples/catalog-selection.ipynb) показывают выбор одной текущей записи из сохранённого каталога и записанные ссылки на инструкции трёх сайтов
+
+Пример читает только локальные метаданные и сохраняет исторические релизы
